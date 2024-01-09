@@ -22,8 +22,8 @@ if (!$conn) {
 else{ $ok='test echec';
  }
 
- //echo $ok;
- //exit();
+ echo $ok.'ario';
+ exit();
 
 //  // Informations de connexion à la base de données Oracle
 // $dsn = 'oci:dbname=//localhost:1521/BDREQUISITION';
