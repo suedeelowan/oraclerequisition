@@ -22,7 +22,7 @@ if (!$conn) {
 else{ $ok='test echec';
  }
 
- echo $ok.'ario';
+ echo $ok.'ario202';
  exit();
 
 //  // Informations de connexion à la base de données Oracle
