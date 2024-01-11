@@ -10,7 +10,7 @@ $options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 );
 //error_reporting(0);
-$db1 = new PDO('mysql:host=localhost;dbname=requisition', 'root','');
+$db1 = new PDO('mysql:host=localhost;dbname=suivi_des_requisitions2', 'root','');
 
 $conn = oci_connect( 'BDREQUISITION', 'DARRV2023' ,  'localhost/xe');
 if (!$conn) {
@@ -22,8 +22,8 @@ if (!$conn) {
 else{ $ok='test echec';
  }
 
- echo $ok.'ario202';
- exit();
+//  echo $ok.'ariosimple';
+//  exit();
 
 //  // Informations de connexion à la base de données Oracle
 // $dsn = 'oci:dbname=//localhost:1521/BDREQUISITION';

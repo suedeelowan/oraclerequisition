@@ -44,7 +44,7 @@ define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
 define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "requisition");
+define("DATABASE_NAME", "suivi_des_requisitions2");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD", "");
 

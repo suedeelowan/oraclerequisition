@@ -13,18 +13,6 @@ if (!empty($_POST) && isset($_POST['login'])) {
         {
             
 
-            // $user = UTILISATEUR::login($username,$password); 
-            // $_SESSION['IDUSER']= $user['IDUSER']; 
-            // $_SESSION['USERNAME']= $user['login_user'];
-            
-            // $_SESSION['password_user']= $user['password_user'];
-            // $_SESSION['civilite_user']= $user['civilite_user'];
-            // $_SESSION['NOM_USER']= $user['nom_user'];
-            // $_SESSION['photo_user']= $user['photo_user'];
-            // $_SESSION['PRENOM_USER']= $user['prenom_user'];
-            // $_SESSION['email_user']= $user['email_user'];
-            // $_SESSION['PROFIL_USER']= $user['PROFIL_USER'];
-            
 
             $user = UTILISATEUR::login($username,$password); 
             $_SESSION['IDUSER']= $user['IDUSER']; 

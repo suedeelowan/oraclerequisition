@@ -355,7 +355,7 @@ if(isset($_POST['envoyer_reev'])){
                         </tr>
                         
                         
-                                         <?php $i=0; $leFobTotal=0;  foreach ($infotc as $index => $tcinfo): $i++; ?>
+                            <?php $i=0; $leFobTotal=0;  foreach ($infotc as $index => $tcinfo): $i++; ?>
                         <tr style="font-size: 10px;  padding: 1px; margin:1px;">
                             <td align="center" style="width: 3mm;"><?php echo $i; ?></td>
                             <td colspan="3" style="width: 35mm; padding: 2mm 1mm 2mm 1mm;"><?php echo $tcinfo['LIBELLE_COM']; ?></td>
@@ -478,7 +478,7 @@ if(isset($_POST['envoyer_reev'])){
             $refpdf = $num_tc.'_'.time();
             $nom=$refpdf.'.pdf';
             // C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\darrv\suivi_requisition\assets\reeval
-            $lefichier='C:/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/darrv/requisition_reeval/assets/reeval/'.$nom;
+            $lefichier='D:/dev/htdocs/oracle_requisition/assets/reeval/'.$nom;
         try
         {
             $html2pdf = new HTML2PDF("L", "A4", "fr");
@@ -517,7 +517,7 @@ if(isset($_POST['envoyer_reev'])){
     $commentaire="Transmis a la premiere ligne";
     
 
-    $latransmission=transmission::traiterreeval_Audit($numeroletc,$statut,$commentaire);
+   //@@ $latransmission=transmission::traiterreeval_Audit($numeroletc,$statut,$commentaire);
 
             //exit();
 
@@ -535,7 +535,7 @@ if(isset($_POST['envoyer_reev'])){
    echo '<script>';
    echo 'window.open("./assets/reeval/'.$nom.'", "_blank");';
    echo '</script>';
-
+exit();
       
  
 } 
